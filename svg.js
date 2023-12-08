@@ -1,5 +1,5 @@
-const generateStats = (data)=>{
-    return (`<svg width="330" height="180" xmlns="http://www.w3.org/2000/svg"  version="1.1">
+const generateStats = (data) => {
+	return `<svg width="330" height="180" xmlns="http://www.w3.org/2000/svg"  version="1.1">
     <style>
     svg {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
@@ -93,7 +93,6 @@ const generateStats = (data)=>{
         </foreignObject>
     </g>
 </g>
-</svg>`)
-
-}
+</svg>`;
+};
 export default generateStats;

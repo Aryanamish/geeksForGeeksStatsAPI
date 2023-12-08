@@ -1,51 +1,53 @@
-<p align="center">
- <h1 align="center">geeksForGeeksStats API - GFG updated UI</h1>
- <p align="center">Dynamically generated GeeksForGeeks stats for your readmes!</p>
-</p>
+# geeksForGeeksStats API - GFG Updated UI
 
-*****
+The **geeksForGeeksStats API** provides dynamically generated GeeksForGeeks stats that you can showcase on your GitHub profile or any website. It offers details on the total number of problems solved on [GeeksForGeeks](https://practice.geeksforgeeks.org/).
 
-API to get count of total problems solved on [GeeksForGeeks](https://practice.geeksforgeeks.org/) with details.
-> you can use this API to show your stats on github profile or any website.
-
-> `node.js`  `express`  `cheerio`
 ## Preview
+
 ![Screenshot 2021-12-24 203043](https://user-images.githubusercontent.com/88178000/147360853-1c573480-399f-4e68-9112-b07e13852100.jpg)
-# How to use
- to show in markdown (Github profile) simply copy below code and replace **`<YOUR_USERNAME>`** with your GeeksForGeeks UserName
- - if you have blank space in your userName dont use Blank Space use %20
- > for example if your GeeksForGeeks userName is "narendra dewasi" , then  you'll need to replace <YOUR_USERNAME> with narendra%20dewasi
 
+## How to Use
 
- > that's it, if you get any error , make sure you have solved at least 1 problem on GFG and cross check username and link 
+To display your stats in markdown (GitHub profile), copy the code below and replace `<YOUR_USERNAME>` with your GeeksForGeeks username. If your username contains spaces, replace them with `%20`. For example, if your GeeksForGeeks username is "narendra dewasi," replace `<YOUR_USERNAME>` with `narendra%20dewasi`.
 
-
- > send me message if any error occur [LinkedIn](https://www.linkedin.com/in/narendra-dewasi/)
-
-#### copy this code 👇🏻
 ```
-[![Narendra's geeksForgeeks stats](https://geeks-for-geeks-stats-api-napiyo.vercel.app/?userName=<YOUR_USERNAME>)](https://github.com/napiyo/geeksForGeeksStatsAPI)
+https://gfgstats.aryanamish.in/?userName=<GFG_USERNAME>
 ```
 
-## make clickable
-by default when you click on stat box you'll redirect to this github. if you want to redirect to your geeksForgeeks profile or any other replace **`<YOUR_LINK_HERE>`**.
-> DONT FORGET to replace userName as mentioned before
-> dont use `"` in your link , simple paste it
+If you want json response you can use `&json` parameter to the get request
+
 ```
-[![Narendra's geeksForgeeks stats](https://geeks-for-geeks-stats-api-napiyo.vercel.app/?userName=<YOUR_USERNAME>)](<YOUR_LINK_HERE>)
- ```
- 
- ### API END POINT
- ```
- https://geeks-for-geeks-stats-api-napiyo.vercel.app/
- ```
- 
- <br>
- 
- # Any contribution to this repo is highly appreciated
- 
- <br>
- <br>
- <br>
- 
- inspired by [https://github.com/KnlnKS/leetcode-stats](https://github.com/KnlnKS/leetcode-stats)
+https://gfgstats.aryanamish.in/?userName=<GFG_USERNAME>&json
+```
+
+To show the SVG on you Readme files you can use
+
+```markdown
+[![Aryan's geeksForGeeks stats](https://gfgstats.aryanamish.in/?userName=<GFG_USERNAME>)](https://github.com/Aryanamish/geeksForGeeksStatsAPI)
+```
+
+## API END POINT
+
+`https://gfgstats.aryanamish.in`
+
+## Any contribution to this repo is highly appreciated
+
+<br>
+inspired by https://github.com/napiyo/geeksForGeeksStatsAPI/
+
+<br>
+<br>
+<div id="badges">
+  <a href="https://www.linkedin.com/in/aryan-amish/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <!-- <a href="https://discordapp.com/users/1080203547276230719">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Badge"/>
+  </a> -->
+  <a target="_blank" href="mailto:aryanamish385@gmail.com">
+    <img src = "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Mail Badge">
+  </a>
+  <a target="_blank" href="https://twitter.com/aryanamish1">
+    <img src = "https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge">
+  </a>
+</div>
