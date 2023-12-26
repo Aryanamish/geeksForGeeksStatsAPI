@@ -2,7 +2,11 @@ import express, {raw} from 'express';
 import request from 'request';
 import cheerio from 'cheerio';
 import generateStats from './svg.js';
+import cors from 'cors';
+
 const app = express();
+
+app.use(cors());
 
 app.get('/', function (req, res) {
 	let userName = req.query.userName;
@@ -50,7 +54,7 @@ app.get('/', function (req, res) {
 						res.send(values);
 					} else {
 						let svg = generateStats(values);
-						res.setHeader('Content-Type', 'image/svg+xml');
+						res.setHeader('Content-Type', 'text/html');
 						res.setHeader('Cache-Control', 's-max-age=60, stale-while-revalidate');
 						res.send(svg);
 					}

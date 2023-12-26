@@ -26,6 +26,8 @@ To show the SVG on you Readme files you can use
 [![Aryan's geeksForGeeks stats](https://gfgstats.aryanamish.in/?userName=<GFG_USERNAME>)](https://github.com/Aryanamish/geeksForGeeksStatsAPI)
 ```
 
+![Aryan's geeksForGeeks stats](https://localhost:2001/?userName=aryanamish)(https://github.com/Aryanamish/geeksForGeeksStatsAPI)
+
 ## API END POINT
 
 `https://gfgstats.aryanamish.in`
